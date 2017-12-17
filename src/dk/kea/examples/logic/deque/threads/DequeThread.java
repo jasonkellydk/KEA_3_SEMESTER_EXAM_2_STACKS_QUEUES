@@ -27,8 +27,6 @@ public class DequeThread extends Thread
 
                 if (Letter.equals(filterLetter)) {
                     System.out.println("Thread2: "+deque.pollLast().getCity());
-
-                    return;
                 }
 
                 deque.pollLast();
@@ -42,8 +40,6 @@ public class DequeThread extends Thread
 
             if (Letter.equals(filterLetter)) {
                 System.out.println("Thread1: " + deque.pollFirst().getCity());
-
-                return;
             }
 
             deque.pollFirst();
